@@ -1,0 +1,173 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-hero {
+  padding: 0px;
+  margin: 0px;
+  min-height: 90vh;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(66.91deg, #a019ac 28.81%, #581fa3 77.05%);
+}
+
+.section-hero .nav {
+  width: 80%;
+  height: auto;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.section-hero .container {
+  width: 80%;
+  height: auto;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-hero .container .info {
+  width: 40%;
+  height: auto;
+  min-width: 350px;
+}
+
+.section-hero .container .cta {
+  padding: 15px;
+  margin-top: 15px;
+  background-color: yellow;
+  border: 0px;
+  font-weight: 550;
+  font-size: 1em;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.161);
+          box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.161);
+  max-width: 130px;
+}
+
+.section-hero .container .hero-image {
+  width: 50%;
+  height: auto;
+}
+
+h1 {
+  text-align: left;
+  font: italic normal bold 72px/67px Roboto;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+
+p {
+  text-align: left;
+  font: italic normal normal 32px/36px Roboto;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container {
+    padding: 0px;
+    margin: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .container .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .info .cta {
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  .container .hero-image {
+    padding: 0px;
+    margin: 0px;
+    width: 80%;
+    height: auto;
+    min-width: 300px;
+  }
+  h1 {
+    text-align: left;
+    font: italic normal bold 56px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  p {
+    text-align: left;
+    font: italic normal normal 24px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,130 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-hero {
+    padding: 0px;
+    margin: 0px;
+    min-height: 90vh;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(66.91deg, #a019ac 28.81%, #581fa3 77.05%);
+
+    .nav {
+        width: 80%;
+        height: auto;
+        padding: 15px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    
+    .container {
+        width: 80%;
+        height: auto;
+        padding: 25px;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        .info {
+            width: 40%;
+            height: auto;
+            min-width: 350px;
+        }
+
+        .cta {
+            padding: 15px;
+            margin-top: 15px;
+            background-color: yellow;
+            border: 0px;
+            font-weight: 550;
+            font-size: 1em;
+            border-radius: 5px;
+            box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.161);
+            max-width: 130px;
+        }
+    
+        .hero-image {
+            width: 50%;
+            height: auto;
+        }
+    }
+}
+
+h1 {
+    text-align: left;
+    font: italic normal bold 72px/67px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+p {
+    text-align: left;
+    font: italic normal normal 32px/36px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+@media only screen and ( max-width: 1000px) {
+    
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        padding: 0px;
+        margin:0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .cta{
+                padding: 15px;
+                margin-bottom: 30px;
+            }
+        }
+        .hero-image{
+            padding: 0px;
+            margin: 0px;
+            width: 80%;
+            height: auto;
+            min-width: 300px;
+        }
+    }
+    
+    h1 {
+        text-align: left;
+        font: italic normal bold 56px Roboto;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    
+    p {
+        text-align: left;
+        font: italic normal normal 24px Roboto;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+}
