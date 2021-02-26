@@ -11,6 +11,11 @@ body {
     font: Roboto;
 }
 
+@font-face{
+    font-family: Roboto;
+    src: url(../assets/fonts);
+}
+
 h1 {
     text-align: left;
     font: italic normal bold 4.5em Roboto;
