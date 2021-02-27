@@ -11,14 +11,10 @@ body {
     font: Roboto;
 }
 
-@font-face{
-    font-family: Roboto;
-    src: url(../assets/fonts);
-}
 
 h1 {
     text-align: left;
-    font: italic normal bold 4.5em Roboto;
+    font: italic normal bold 4.2em Roboto;
     letter-spacing: 0px;
     color: #FFFFFF;
 }
@@ -64,7 +60,7 @@ p {
         .info {
             width: 40%;
             height: auto;
-            min-width: 370px;
+            min-width: 330px;
         }
 
         .cta {
@@ -94,14 +90,24 @@ p {
     font-family: Roboto;
     font: roboto;
 
-    h2 {
-        color: gray;
-        text-align: center;
+    .lines{
+
+        display: flex;
+        width: 95vw;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            color: gray;
+            text-align: center;
+            min-width: 150px;
+            margin: 20px;
+        }
     }
 
     h1 {
         color: black;
-        font-size: 3em;
+        font-size: 2.5em;
         margin: 0px;
         padding: 0px;
         text-align: center;
@@ -118,13 +124,129 @@ p {
     ul{
         width: 40%;
         height: auto;
-        font-size: 1.2em;
+        font-size: 1.5em;
         font-weight: 600;
+        list-style-type: "✓  ";
+        
     }
 
     video{
         width: 50%;
         height: auto;
+    }
+}
+
+.section-offer{
+    width: 100%;
+    background-image: url(../assets/images/offer-background2.png);
+    background-repeat: repeat-x;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    h1{
+        font: italic normal bold 4em Roboto;
+        text-shadow: 3px 3px 10px #000000BF;
+    }
+    .offer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 2em;
+
+        .cta {
+            padding: 15px;
+            margin: 0px;
+            background-color: yellow;
+            border: 0px;
+            font-weight: 550;
+            font-size: 1em;
+            border-radius: 5px;
+            box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.161);
+            max-width: 130px;
+        }
+    }
+}
+
+.section-hi-there{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/images/background-image.png);
+    width: 100vw;
+    background-repeat: no-repeat;
+
+    h1{
+        font-size: 2.5em;
+        color: gray;
+        padding-bottom: 1em;
+        text-align: center;
+    }
+
+    .container1{
+        display: flex;
+        justify-content: space-around;
+        width: 80vw;
+
+        .image{
+            width: 40%;
+            height: 40%;
+        }
+
+        .info{
+            width: 40%;
+            font: italic 1.5em Roboto;
+            font-weight: 450;
+            line-height: 1.5em;
+
+            h2{
+                font: italic normal 2.5em Roboto;
+                color: #A019AC;
+                font-weight: 900;
+                padding: 0px;
+                margin: 0px;
+
+            }
+        }
+    }
+
+    .container2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 80vw;
+
+        .image2{
+            width: 40%;
+            height: 100%;
+        }
+
+        ul{
+            width: 40%;
+            height: auto;
+            font-size: 1.5em;
+            font-weight: 600;
+            list-style-type: "✓  ";
+        }
+    }
+}
+
+.section-steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .step1{
+        width: 60vw;
+        font: italic normal 500 2em Roboto;
+        margin-bottom: 1.5em;
+    }
+    .step2{
+        width: 60vw;
+        font: italic normal 500 2em Roboto;
+        text-align: right;
+        margin-top: 1.5em;
     }
 }
 
@@ -135,13 +257,15 @@ p {
         font-size: 8px;
     }
     
-    .nav {
+    .section-hero .nav {
         display: flex;
         justify-content: center;
         align-items: center;
+        align-content:center ;
     }
 
-    .container{
+    .section-hero .container{
+        width: 100vw;
         padding: 0px;
         margin:0px;
         display: flex;
@@ -166,13 +290,13 @@ p {
             margin-top: 30px;
             width: 80%;
             height: auto;
-            min-width: 350px;
+            min-width: 300px;
         }
     }
     
     h1 {
         text-align: left;
-        font: italic normal bold Roboto;
+        font: italic normal bold  Roboto;
         letter-spacing: 0px;
         color: #FFFFFF;
         text-align: center;
@@ -185,6 +309,71 @@ p {
         color: #FFFFFF;
         text-align: center;
     }
+
+    .section-video{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        
+        ul {
+            width: 100%;
+        }
+        video{
+            width: 100%;
+            margin-top: 2.5em;
+        }
+    }
+
+    .section-offer{
+        margin-top: 25px;
+        flex-direction: column;
+
+        .offer{
+            margin: 0px;
+            flex-direction: row;
+            height: auto;
+            align-items: center;
+            justify-content: center;
+
+            .cta{
+                font-size: 16px;
+                margin: 0px;
+                margin: 20px;
+
+            }
+        }
+    }
+
+    .section-hi-there{
+        .container2{
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+
+            .image2{
+                width: 60vw;
+                height: auto;
+            }
+            
+            ul{
+                width: 80%;
+            }
+        }
+        .container1{
+            flex-direction: column-reverse;
+            align-items: center;
+            
+            .info{
+                width: 100%;
+            }
+            .image{
+                width: 60vw;
+                height: 100%;
+            }
+        }
+    }
 } 
+
+
 
 
