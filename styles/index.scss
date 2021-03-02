@@ -237,6 +237,9 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url(../assets/images/background-image002.png);
+    width: 100vw;
+    margin-bottom: 2em;
     .step1{
         width: 60vw;
         font: italic normal 500 2em Roboto;
@@ -250,6 +253,222 @@ p {
     }
 }
 
+.section-courses{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 2em;
+    width: 100vw;
+    background-image: url(../assets/images/background-image.png);
+    .cards{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .card01{
+            width: auto;
+            height: auto;
+            max-width: 12em;
+            box-shadow: 0px 3px 30px #3E3E6A73;
+            text-align: left;
+            padding-bottom: 2em;   
+            margin-top: 2em;     
+        }
+    }
+}
+
+.section-fail{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../assets/images/background-image003.png);
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    
+
+    h2{
+        color: #FFFFFF;
+        font: italic 600 2.5em Roboto;
+        text-align: center;
+    }
+
+    #mid01{
+        margin-top: 6em;
+    }
+    .container01{
+        width: auto;
+        height: 80%;
+        margin: 3em;
+        display: flex;
+        flex-direction: column;
+
+        .card01{
+            width: 16em;
+            height: auto;
+            display: flex;
+            align-items: center;
+            background-color: #FFFFFF;
+            border-radius: 0.7em;
+            padding: 2em;
+            margin-bottom: 3em;
+
+            img{
+                height: 3em;
+                width: 3em;
+            }
+        }
+    }
+}
+
+.section-info{
+    background-image: url(../assets/images/background-image004.png);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #flexinfo{
+        flex-direction: row;
+    }
+
+    .container{
+        width: 70%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        margin: 8em;
+        .info{
+            width: 40%;
+        }
+        img{
+            width: 14em;
+            height: 14em;
+
+        }
+    }
+}
+
+.section-virtual{
+    display: flex;
+    align-items: center;
+    margin-top: 4em;
+
+    .container{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 80vw;
+        justify-content: space-around;
+        align-items: center;
+
+        .info{
+            width: 45%;
+            font: normal 400 1.5em Roboto;
+        }
+        img{
+            width: 25%;
+        }
+    }
+}
+
+.section-why-us{
+    width: 100%;
+    background-image: url(../assets/images/background-image003.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+
+    .container-main{
+        display: flex;
+        height: 400px;
+        width: 80%;
+        justify-content: space-around;
+        margin-bottom: 3em;
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            height: 100%;
+
+            .card{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #FFFFFF;
+                padding: 1em;
+                padding-left: 8px;
+                padding-right: 8px;
+                font: normal 500 1.5em Roboto;
+                border-radius: 0.8em;
+
+            }
+        }
+        #below{
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+    }
+}
+
+.section-why-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-image: url(../assets/images/background-image005.png);
+    background-size: cover;
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 1050px;
+        text-align: center;
+        font: normal 500 1.5em Roboto;
+        color: #470082;
+
+        .card{
+            padding: 1.5em;
+            margin: 1.5em;
+            box-shadow: 1px 1px 20px #030b725c;
+            border-radius: 1em;
+        }
+    }
+
+}
+
+.millionaires{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/images/background-image005.png);
+    background-size: cover;
+    text-align: center;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1250px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        img{
+            width: 20em;
+            height: 23em;
+        }
+    }
+}
 
 @media only screen and ( max-width: 1000px) {
 
@@ -338,8 +557,8 @@ p {
             .cta{
                 font-size: 16px;
                 margin: 0px;
-                margin: 20px;
-
+                margin-bottom: 15px;
+                margin-left: 15px;
             }
         }
     }
@@ -372,8 +591,83 @@ p {
             }
         }
     }
-} 
 
+    .section-courses .cards{
+        font-size: 10px;
+        width: 100%;
+        .card01{
+            margin: 12px;
+        }
+    }
 
+    .section-fail{
+        font-size: 10px;
+        .container{
+            #mid01{
+                margin: 0px;
+            }
+            .container01{
+                margin: 0px;
+                
+            }
+        }
+    }
+    
+    .section-info{
 
+        #flexinfo{
+            flex-direction: column-reverse;
+            margin-top: 20px;
+        }
+        .container{
+            flex-direction: column-reverse;
+            width: 100vw;
+            align-items: center;
+            margin-bottom: 20px;
+            
+            .info{
+                width: 85%;
+                margin: 1.5em;
 
+                ul{
+                    padding-left: 20px;
+                }
+        
+            }
+        }
+    
+    }
+
+    .section-virtual{
+        .container{
+            flex-direction: column-reverse;
+            .info{
+                width: 90%;
+            }
+            img{
+                width: 60%;
+            }
+        }
+    }
+
+    .section-why-us{
+        .container-main{
+            justify-content: space-around;
+            flex-wrap: wrap;
+            height: 300px;
+            margin-left: 56px;
+            .container{
+                width: 0px;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+    }
+
+    .section-why-card{
+        .container{
+            width: 90%;
+        }
+    }
+
+}
